@@ -22,6 +22,9 @@
       <value datm_mode="CLMCRUJRA2024">
         CLMCRUJRA2024.Solar,CLMCRUJRA2024.Precip,CLMCRUJRA2024.TPQW
       </value>
+      <value datm_mode="CLMCRUJRA3v0">
+        CLMCRUJRA3v0.Solar,CLMCRUJRA3v0.Precip,CLMCRUJRA3v0.TPQW
+      </value>
       <value datm_mode="CLMCRUNCEPv7">
         CLMCRUNCEPv7.Solar,CLMCRUNCEPv7.Precip,CLMCRUNCEPv7.TPQW
       </value>

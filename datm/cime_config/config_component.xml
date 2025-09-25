@@ -10,10 +10,11 @@
        This file may have atm desc entries.
   -->
   <description modifier_mode="1">
-    <desc atm="DATM[%QIA][%WISOQIA][%CRUJRA2024][%CRUv7][%GSWP3v1][%MOSARTTEST][%NLDAS2][%CPLHIST][%1PT][%NYF][%IAF][%JRA][%JRA-1p4-2018][%JRA-1p5-2023][%JRA-RYF6162][%JRA-RYF8485][%JRA-RYF9091][%JRA-RYF0304][%SIMPLE]"> Data driven ATM </desc>
+    <desc atm="DATM[%QIA][%WISOQIA][%CRUJRA2024][%CRUJRA3v0][%CRUv7][%GSWP3v1][%MOSARTTEST][%NLDAS2][%CPLHIST][%1PT][%NYF][%IAF][%JRA][%JRA-1p4-2018][%JRA-1p5-2023][%JRA-RYF6162][%JRA-RYF8485][%JRA-RYF9091][%JRA-RYF0304][%SIMPLE]"> Data driven ATM </desc>
     <desc option="QIA"> QIAN data set </desc>
     <desc option="WISOQIA">QIAN with water isotopes</desc>
     <desc option="CRUJRA2024"> CRUJRA 2024 data set </desc>
+    <desc option="CRUJRA3v0"> CRUJRA v3.0 data set </desc>
     <desc option="CRUv7"> CLM CRU NCEP v7 data set </desc>
     <desc option="GSWP3v1"> GSWP3v1 data set </desc>
     <desc option="NLDAS2"> NLDAS2 regional 0.125 degree data set over the U.S. (25-53N, 235-293E). WARNING: Garbage data will be produced for runs extending beyond this regional domain. </desc>
@@ -43,13 +44,13 @@
 
   <entry id="DATM_MODE">
     <type>char</type>
-    <valid_values>CORE2_NYF,CORE2_IAF,CLM_QIAN,CLM_QIAN_WISO,1PT,CLMCRUJRA2024,CLMCRUNCEPv7,CLMGSWP3v1,CLMNLDAS2,CPLHIST,CORE_IAF_JRA,CORE_IAF_JRA_1p4_2018,CORE_IAF_JRA_1p5_2023,CORE_RYF6162_JRA,CORE_RYF8485_JRA,CORE_RYF9091_JRA,CORE_RYF0304_JRA,ERA5,SIMPLE</valid_values>
+    <valid_values>CORE2_NYF,CORE2_IAF,CLM_QIAN,CLM_QIAN_WISO,1PT,CLMCRUJRA2024,CLMCRUJRA3v0,CLMCRUNCEPv7,CLMGSWP3v1,CLMNLDAS2,CPLHIST,CORE_IAF_JRA,CORE_IAF_JRA_1p4_2018,CORE_IAF_JRA_1p5_2023,CORE_RYF6162_JRA,CORE_RYF8485_JRA,CORE_RYF9091_JRA,CORE_RYF0304_JRA,ERA5,SIMPLE</valid_values>
     <default_value>CORE2_NYF</default_value>
     <group>run_component_datm</group>
     <file>env_run.xml</file>
     <desc>Mode for data atmosphere component.
       CORE2_NYF (CORE2 normal year forcing) are modes used in forcing prognostic ocean/sea-ice components.
-      CLMCRUJRA2024, CLMCRUNCEPv7, CLMGSWP3v1, CLMNLDAS2 and 1PT are modes using observational data for forcing prognostic land components.
+      CLMCRUJRA2024, CLMCRUJRA3v0, CLMCRUNCEPv7, CLMGSWP3v1, CLMNLDAS2 and 1PT are modes using observational data for forcing prognostic land components.
       WARNING for CLMNLDAS2: This is a regional forcing dataset over the U.S. (25-53N, 235-293E). Garbage data will be produced for runs extending beyond this regional domain. </desc>
     <values match="last">
       <value compset="DATM%NYF">CORE2_NYF</value>
@@ -64,6 +65,7 @@
       <value compset="DATM%QIA">CLM_QIAN</value>
       <value compset="DATM%WISOQIA">CLM_QIAN_WISO</value>
       <value compset="DATM%CRUJRA2024">CLMCRUJRA2024</value>
+      <value compset="DATM%CRUJRA3v0">CLMCRUJRA3v0</value>
       <value compset="DATM%CRUv7">CLMCRUNCEPv7</value>
       <value compset="DATM%GSWP3v1">CLMGSWP3v1</value>
       <value compset="DATM%NLDAS2">CLMNLDAS2</value>
