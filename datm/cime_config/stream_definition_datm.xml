@@ -30,6 +30,7 @@
   CLM_QIAN              = Run with the CLM Qian dataset valid from 1948 to 2004 (force CLM)
   CLM_QIAN_WISO         = Run with the CLM Qian dataset with isotopes valid from 2000 to 2004 (force CLM)
   CLMCRUJRA2024         = Run with the CLM CRUJRA 2024 forcing valid from 1901 to 2023 (force CLM)
+  CLMCRUJRA3v0          = Run with the CLM CRUJRA v3.0 forcing valid from 2000 to 2024 (force CLM)
   CLMCRUNCEPv7          = Run with the CLM CRU NCEP V7 forcing valid from 1900 to 2010 (force CLM)
   CLMGSWP3v1            = Run with the CLM GSWP3 V1 forcing (force CLM)
   CLMNLDAS2             = Run with the CLM NLDAS2 regional forcing valid from 1980 to 2018 (force CLM)
@@ -76,6 +77,13 @@
   CLMCRUJRA2024.Solar
   CLMCRUJRA2024.Precip
   CLMCRUJRA2024.TPQW
+
+  ========================
+  datm_mode CLMCRUJRA3v0: (DATM%CRUJRA3v0 in env_run.xml)
+  ========================
+  CLMCRUJRA3v0.Solar
+  CLMCRUJRA3v0.Precip
+  CLMCRUJRA3v0.TPQW
 
   ========================
   datm_mode CLMCRUNCEPv7: (DATM%CRUv7 in env_run.xml)
