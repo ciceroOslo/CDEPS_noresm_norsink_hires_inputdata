@@ -613,10 +613,10 @@
   
   <stream_entry name="CLMCRUJRA3v0.Solar">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.CRUJRA.0.5d.c20250917/Solar6Hrly/crujra.v3.0.5d.Solr.%ym.365d.noc.nc</file>
+      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT/cicero_mods/atm_forcing.datm7.CRUJRA.0.5d.c20250917/Solar6Hrly/crujra.v3.0.5d.Solr.%ym.365d.noc.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>FSDS     Faxa_swdn</var>
@@ -644,10 +644,10 @@
 
   <stream_entry name="CLMCRUJRA3v0.Precip">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.CRUJRA.0.5d.c20250917/Precip6Hrly/crujra.v3.0.5d.Prec.%ym.365d.noc.nc</file>
+      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT/cicero_mods/atm_forcing.datm7.CRUJRA.0.5d.c20250917/Precip6Hrly/crujra.v3.0.5d.Prec.%ym.365d.noc.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>PRECTmms Faxa_precn</var>
@@ -675,10 +675,10 @@
 
   <stream_entry name="CLMCRUJRA3v0.TPQW">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.CRUJRA.0.5d.c20250917/ESMFmesh_CRUJRAv2.5_c2024.5d_mask_240722.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.CRUJRA.0.5d.c20250917/TPHWL6Hrly/crujra.v3.0.5d.TPQWL.%ym.365d.noc.nc</file>
+      <file first_year="2000" last_year="2024">$DIN_LOC_ROOT/cicero_mods/atm_forcing.datm7.CRUJRA.0.5d.c20250917/TPHWL6Hrly/crujra.v3.0.5d.TPQWL.%ym.365d.noc.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>TBOT     Sa_tbot</var>
