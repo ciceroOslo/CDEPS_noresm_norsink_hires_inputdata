@@ -34,6 +34,7 @@
   CLMCRUNCEPv7          = Run with the CLM CRU NCEP V7 forcing valid from 1900 to 2010 (force CLM)
   CLMGSWP3v1            = Run with the CLM GSWP3 V1 forcing (force CLM)
   CLMNLDAS2             = Run with the CLM NLDAS2 regional forcing valid from 1980 to 2018 (force CLM)
+  ERA5LAND_NORWAYRECT   = Run with CLM ERA5 Land high-resolution regional forcing over Norway and the enclosing rectangular region
   1PT                   = Run with supplied single point data (force CLM)
   CORE2_NYF             = CORE2 normal year forcing (for forcing MOM6 and CICE)
   CORE2_IAF             = CORE2 intra-annual year forcing (for forcing MOM6 and CICE)
@@ -142,6 +143,13 @@
   CORE_IAF_JRA.U_10
   CORE_IAF_JRA.V_10
   CORE_IAF_JRA.CORE2.ArcFactor
+
+  ========================
+  datm_mode ERA5LAND_NORWAYRECT: (DATM%ERA5LAND-NORWAYRECT in env_run.xml)
+  ========================
+  ERA5LAND_NORWAYRECT.Solar
+  ERA5LAND_NORWAYRECT.Precip
+  ERA5LAND_NORWAYRECT.TPQW
 
   ========================
   datm_mode: CPLHIST
@@ -1106,6 +1114,107 @@
     <stream_taxmode>
       <taxmode               >cycle</taxmode>
       <taxmode compset="HIST">limit</taxmode>
+    </stream_taxmode>
+    <stream_dtlimit>
+      <dtlimit>1.5</dtlimit>
+    </stream_dtlimit>
+    <stream_readmode>single</stream_readmode>
+  </stream_entry>
+
+  <!-- ===================================  -->
+  <!-- datm_mode ERA5LAND_NORWAYRECT        -->
+  <!-- ===================================  -->
+
+  <stream_entry name="ERA5LAND_NORWAYRECT.Solar">
+    <stream_meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+    </stream_meshfile>
+    <stream_datafiles>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Solar1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
+    </stream_datafiles>
+    <stream_datavars>
+      <var>FSDS     Faxa_swdn</var>
+    </stream_datavars>
+    <stream_lev_dimname>null</stream_lev_dimname>
+    <stream_mapalgo>
+      <mapalgo>bilinear</mapalgo>
+    </stream_mapalgo>
+    <stream_vectors>null</stream_vectors>
+    <stream_year_align>$DATM_YR_ALIGN</stream_year_align>
+    <stream_year_first>$DATM_YR_START</stream_year_first>
+    <stream_year_last>$DATM_YR_END</stream_year_last>
+    <stream_offset>0</stream_offset>
+    <stream_tintalgo>
+      <tintalgo>coszen</tintalgo>
+    </stream_tintalgo>
+    <stream_taxmode>
+      <taxmode>cycle</taxmode>
+    </stream_taxmode>
+    <stream_dtlimit>
+      <dtlimit>1.5</dtlimit>
+    </stream_dtlimit>
+    <stream_readmode>single</stream_readmode>
+  </stream_entry>
+
+  <stream_entry name="ERA5LAND_NORWAYRECT.Precip">
+    <stream_meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+    </stream_meshfile>
+    <stream_datafiles>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Precip1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
+    </stream_datafiles>
+    <stream_datavars>
+      <var>PRECTmms Faxa_precn</var>
+    </stream_datavars>
+    <stream_lev_dimname>null</stream_lev_dimname>
+    <stream_mapalgo>
+      <mapalgo>bilinear</mapalgo>
+    </stream_mapalgo>
+    <stream_vectors>null</stream_vectors>
+    <stream_year_align>$DATM_YR_ALIGN</stream_year_align>
+    <stream_year_first>$DATM_YR_START</stream_year_first>
+    <stream_year_last>$DATM_YR_END</stream_year_last>
+    <stream_offset>0</stream_offset>
+    <stream_tintalgo>
+      <tintalgo>nearest</tintalgo>
+    </stream_tintalgo>
+    <stream_taxmode>
+      <taxmode>cycle</taxmode>
+    </stream_taxmode>
+    <stream_dtlimit>
+      <dtlimit>1.5</dtlimit>
+    </stream_dtlimit>
+    <stream_readmode>single</stream_readmode>
+  </stream_entry>
+
+  <stream_entry name="ERA5LAND_NORWAYRECT.TPQW">
+    <stream_meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+    </stream_meshfile>
+    <stream_datafiles>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/TPQWL1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
+    </stream_datafiles>
+    <stream_datavars>
+      <var>TBOT     Sa_tbot</var>
+      <var>WIND     Sa_wind</var>
+      <var>QBOT     Sa_shum</var>
+      <var>PSRF     Sa_pbot</var>
+      <var>FLDS     Faxa_lwdn</var>
+    </stream_datavars>
+    <stream_lev_dimname>null</stream_lev_dimname>
+    <stream_mapalgo>
+      <mapalgo>bilinear</mapalgo>
+    </stream_mapalgo>
+    <stream_vectors>null</stream_vectors>
+    <stream_year_align>$DATM_YR_ALIGN</stream_year_align>
+    <stream_year_first>$DATM_YR_START</stream_year_first>
+    <stream_year_last>$DATM_YR_END</stream_year_last>
+    <stream_offset>0</stream_offset>
+    <stream_tintalgo>
+      <tintalgo>linear</tintalgo>
+    </stream_tintalgo>
+    <stream_taxmode>
+      <taxmode>cycle</taxmode>
     </stream_taxmode>
     <stream_dtlimit>
       <dtlimit>1.5</dtlimit>
