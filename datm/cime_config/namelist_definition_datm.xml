@@ -82,8 +82,8 @@
       <value datm_mode="CORE2_IAF" model_grid="01col" >
         CORE2_IAF.NCEP.DENS.SOFS,CORE2_IAF.NCEP.PSLV.SOFS,CORE2_IAF.PREC.SOFS.DAILY,CORE2_IAF.LWDN.SOFS.DAILY,CORE2_IAF.SWDN.SOFS.DAILY,CORE2_IAF.SWUP.SOFS.DAILY,CORE2_IAF.SHUM.SOFS.6HOUR,CORE2_IAF.TBOT.SOFS.6HOUR,CORE2_IAF.U.SOFS.6HOUR,CORE2_IAF.V.SOFS.6HOUR,CORE2_IAF.CORE2.ArcFactor
       </value>
-      <value datm_mode="ERA5LAND_NORWAYRECT">
-        ERA5LAND_NORWAYRECT.Solar,ERA5LAND_NORWAYRECT.Precip,ERA5LAND_NORWAYRECT.TPQW
+      <value datm_mode="CLMERA5LAND_NORWAYRECT">
+        CLMERA5LAND_NORWAYRECT.Solar,CLMERA5LAND_NORWAYRECT.Precip,CLMERA5LAND_NORWAYRECT.TPQW
       </value>
       <value datm_mode="ERA5">
         ERA5_HOURLY
@@ -99,7 +99,7 @@
     <type>char</type>
     <category>datm</category>
     <group>datm_nml</group>
-    <valid_values>CLMNCEP,CORE2_NYF,CORE2_IAF,CORE_IAF_JRA,CORE_RYF6162_JRA,CORE_RYF8485_JRA,CORE_RYF9091_JRA,CORE_RYF0304_JRA,ERA5LAND_NORWAYRECT,ERA5,SIMPLE,CPLHIST,1PT</valid_values>
+    <valid_values>CLMNCEP,CORE2_NYF,CORE2_IAF,CORE_IAF_JRA,CORE_RYF6162_JRA,CORE_RYF8485_JRA,CORE_RYF9091_JRA,CORE_RYF0304_JRA,CLMERA5LAND_NORWAYRECT,ERA5,SIMPLE,CPLHIST,1PT</valid_values>
     <desc>
       general method that operates on the data.
       ----datamode = "CPLHIST"----
@@ -141,7 +141,7 @@
       active-land-only simulations.
       ----datamode = "ERA5"----
       Fifth generation ECMWF atmospheric reanalysis of the global climate
-      ----datamode = "ERA5LAND_NORWAYRECT"----
+      ----datamode = "CLMERA5LAND_NORWAYRECT"----
       ERA5 Land-derived hourly/0.1-degree forcing for the rectangular region covering Norway
       ----datamode = "SIMPLE"----
       Namelist-configurable, constant datm forcing for simple experiments

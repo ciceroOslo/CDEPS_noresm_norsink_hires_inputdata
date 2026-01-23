@@ -34,7 +34,7 @@
   CLMCRUNCEPv7          = Run with the CLM CRU NCEP V7 forcing valid from 1900 to 2010 (force CLM)
   CLMGSWP3v1            = Run with the CLM GSWP3 V1 forcing (force CLM)
   CLMNLDAS2             = Run with the CLM NLDAS2 regional forcing valid from 1980 to 2018 (force CLM)
-  ERA5LAND_NORWAYRECT   = Run with CLM ERA5 Land high-resolution regional forcing over Norway and the enclosing rectangular region
+  CLMERA5LAND_NORWAYRECT   = Run with CLM ERA5 Land high-resolution regional forcing over Norway and the enclosing rectangular region
   1PT                   = Run with supplied single point data (force CLM)
   CORE2_NYF             = CORE2 normal year forcing (for forcing MOM6 and CICE)
   CORE2_IAF             = CORE2 intra-annual year forcing (for forcing MOM6 and CICE)
@@ -145,11 +145,11 @@
   CORE_IAF_JRA.CORE2.ArcFactor
 
   ========================
-  datm_mode ERA5LAND_NORWAYRECT: (DATM%ERA5LAND-NORWAYRECT in env_run.xml)
+  datm_mode CLMERA5LAND_NORWAYRECT: (DATM%CLMERA5LAND-NORWAYRECT in env_run.xml)
   ========================
-  ERA5LAND_NORWAYRECT.Solar
-  ERA5LAND_NORWAYRECT.Precip
-  ERA5LAND_NORWAYRECT.TPQW
+  CLMERA5LAND_NORWAYRECT.Solar
+  CLMERA5LAND_NORWAYRECT.Precip
+  CLMERA5LAND_NORWAYRECT.TPQW
 
   ========================
   datm_mode: CPLHIST
@@ -1122,10 +1122,10 @@
   </stream_entry>
 
   <!-- ===================================  -->
-  <!-- datm_mode ERA5LAND_NORWAYRECT        -->
+  <!-- datm_mode CLMERA5LAND_NORWAYRECT        -->
   <!-- ===================================  -->
 
-  <stream_entry name="ERA5LAND_NORWAYRECT.Solar">
+  <stream_entry name="CLMERA5LAND_NORWAYRECT.Solar">
     <stream_meshfile>
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
@@ -1156,7 +1156,7 @@
     <stream_readmode>single</stream_readmode>
   </stream_entry>
 
-  <stream_entry name="ERA5LAND_NORWAYRECT.Precip">
+  <stream_entry name="CLMERA5LAND_NORWAYRECT.Precip">
     <stream_meshfile>
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
@@ -1187,7 +1187,7 @@
     <stream_readmode>single</stream_readmode>
   </stream_entry>
 
-  <stream_entry name="ERA5LAND_NORWAYRECT.TPQW">
+  <stream_entry name="CLMERA5LAND_NORWAYRECT.TPQW">
     <stream_meshfile>
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
