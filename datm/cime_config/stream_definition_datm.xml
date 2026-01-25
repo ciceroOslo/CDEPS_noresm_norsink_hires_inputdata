@@ -1127,7 +1127,7 @@
 
   <stream_entry name="CLMERA5LAND_NORWAYRECT.Solar">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
       <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Solar1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
@@ -1158,7 +1158,7 @@
 
   <stream_entry name="CLMERA5LAND_NORWAYRECT.Precip">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
       <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Precip1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
@@ -1189,7 +1189,7 @@
 
   <stream_entry name="CLMERA5LAND_NORWAYRECT.TPQW">
     <stream_meshfile>
-      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_lndmask_c260108.nc</meshfile>
+      <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
       <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/TPQWL1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
