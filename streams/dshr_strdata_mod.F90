@@ -79,7 +79,7 @@ module dshr_strdata_mod
   end interface shr_strdata_get_stream_pointer
 
   ! public data members:
-  integer                              :: debug = 0  ! local debug flag
+  integer                              :: debug = 1  ! local debug flag
   character(len=*) ,parameter, public  :: shr_strdata_nullstr = 'null'
   character(len=*) ,parameter          :: shr_strdata_unset = 'NOT_SET'
   integer          ,parameter          :: main_task = 0
@@ -2007,12 +2007,18 @@ contains
     end do
 
     ! determine compdof for stream
+    write(sdat%stream(1)%logunit,*) ' Calling ESMF_MeshGet...'
     call ESMF_MeshGet(per_stream%stream_mesh, elementdistGrid=distGrid, rc=rc)
+    write(sdat%stream(1)%logunit,*) ' ESMF_MeshGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
+    write(sdat%stream(1)%logunit,*) ' Calling ESMF_DistGridGet...'
     call ESMF_DistGridGet(distGrid, localDe=0, elementCount=lsize, rc=rc)
+    write(sdat%stream(1)%logunit,*) ' ESMF_DistGridGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
     allocate(compdof(lsize))
+    write(sdat%stream(1)%logunit,*) ' Calling ESMF_DistGridGet again...'
     call ESMF_DistGridGet(distGrid, localDe=0, seqIndexList=compdof, rc=rc)
+    write(sdat%stream(1)%logunit,*) ' ESMF_DistGridGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
     if (stream_nlev > 1) then
        allocate(compdof3d(stream_nlev*lsize))
