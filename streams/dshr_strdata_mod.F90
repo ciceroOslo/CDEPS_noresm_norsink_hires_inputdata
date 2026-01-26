@@ -1758,6 +1758,7 @@ contains
              end if
           else ! stream_nlev == 1
              if (per_stream%stream_pio_iodesc_set) then
+                write(sdat%stream(1)%logunit,*) 'At shr_strdata_readstrm line 1761. Will call function that is potentially in a missing directory.'
                 call pio_read_darray(pioid, varid, per_stream%stream_pio_iodesc, data_dbl1d, rcode)
              else
                 rcode = pio_get_var(pioid, varid,start=(/1,1,nt/), count=(/1,1,1/), ival=data_dbl1d)
