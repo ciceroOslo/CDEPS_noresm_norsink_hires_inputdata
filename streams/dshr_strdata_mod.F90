@@ -1758,7 +1758,6 @@ contains
              end if
           else ! stream_nlev == 1
              if (per_stream%stream_pio_iodesc_set) then
-                write(sdat%stream(1)%logunit,*) 'At shr_strdata_readstrm line 1761. Will call function that is potentially in a missing directory.'
                 call pio_read_darray(pioid, varid, per_stream%stream_pio_iodesc, data_dbl1d, rcode)
              else
                 rcode = pio_get_var(pioid, varid,start=(/1,1,nt/), count=(/1,1,1/), ival=data_dbl1d)
@@ -2008,18 +2007,12 @@ contains
     end do
 
     ! determine compdof for stream
-    write(sdat%stream(1)%logunit,*) ' Calling ESMF_MeshGet...'
     call ESMF_MeshGet(per_stream%stream_mesh, elementdistGrid=distGrid, rc=rc)
-    write(sdat%stream(1)%logunit,*) ' ESMF_MeshGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
-    write(sdat%stream(1)%logunit,*) ' Calling ESMF_DistGridGet...'
     call ESMF_DistGridGet(distGrid, localDe=0, elementCount=lsize, rc=rc)
-    write(sdat%stream(1)%logunit,*) ' ESMF_DistGridGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
     allocate(compdof(lsize))
-    write(sdat%stream(1)%logunit,*) ' Calling ESMF_DistGridGet again...'
     call ESMF_DistGridGet(distGrid, localDe=0, seqIndexList=compdof, rc=rc)
-    write(sdat%stream(1)%logunit,*) ' ESMF_DistGridGet returned, rc value: ', rc
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
     if (stream_nlev > 1) then
        allocate(compdof3d(stream_nlev*lsize))
