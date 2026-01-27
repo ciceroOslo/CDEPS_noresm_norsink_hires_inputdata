@@ -1130,7 +1130,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Solar1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/reordered_dims/Solar1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>FSDS     Faxa_swdn</var>
@@ -1161,7 +1161,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/Precip1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/reordered_dims/Precip1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>PRECTmms Faxa_precn</var>
@@ -1192,7 +1192,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_ERA5LANDaligned_lndmask_c260108.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/TPQWL1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
+      <file first_year="2019" last_year="2019">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260120/reordered_dims/TPQWL1Hrly/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>TBOT     Sa_tbot</var>
