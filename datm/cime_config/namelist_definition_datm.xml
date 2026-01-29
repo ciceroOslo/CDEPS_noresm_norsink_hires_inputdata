@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 
-<?xml-stylesheet type="text/xsl" href="namelist_definition.xsl"?>
-
 <entry_id version="2.0">
 
   <!-- Note that streamslist here does not handle the optional streams - -->
@@ -15,9 +13,6 @@
     <values>
       <value datm_mode="CLM_QIAN$">
         CLM_QIAN.Solar,CLM_QIAN.Precip,CLM_QIAN.TPQW
-      </value>
-      <value datm_mode="CLM_QIAN_WISO">
-        CLM_QIAN_WISO.Solar,CLM_QIAN_WISO.Precip,CLM_QIAN_WISO.TPQW
       </value>
       <value datm_mode="CLMCRUJRA2024">
         CLMCRUJRA2024.Solar,CLMCRUJRA2024.Precip,CLMCRUJRA2024.TPQW
@@ -249,7 +244,7 @@
     <type>char(10)</type>
     <category>datm</category>
     <group>datm_nml</group>
-    <valid_values>Anomaly.Forcing.Precip,Anomaly.Forcing.Temperature,Anomaly.Forcing.Pressure,Anomaly.Forcing.Humidity,Anomaly.Forcing.Uwind,Anomaly.Forcing.Vwind,Anomaly.Forcing.Shortwave,Anomaly.Forcing.Longwave</valid_values>
+    <valid_values>none,Anomaly.Forcing.cmip5.rcp45,Anomaly.Forcing.cmip6.ssp126,Anomaly.Forcing.cmip6.ssp245,Anomaly.Forcing.cmip6.ssp370,Anomaly.Forcing.cmip6.ssp585</valid_values>
     <desc>
       If set, include anomaly forcing streams in namelist.
     </desc>
@@ -339,19 +334,6 @@
     <values>
       <value>.true.</value>
       <value datm_co2_tseries="none">.false.</value>
-    </values>
-  </entry>
-
-  <entry id="flds_wiso">
-    <type>logical</type>
-    <category>datm</category>
-    <group>datm_nml</group>
-    <desc>
-      If true, prescribed water isotopes are sent from datm (must be true for running with CLM).
-    </desc>
-    <values>
-      <value>.false.</value>
-      <!-- <value datm_mode="CLM_QIAN_WISO">.true.</value> -->
     </values>
   </entry>
 

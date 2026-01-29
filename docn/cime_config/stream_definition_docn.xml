@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 
-<?xml-stylesheet type="text/xsl" href="namelist_definition.xsl"?>
-
 <stream_data version="2.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <stream_entry name="prescribed">
@@ -291,7 +289,7 @@
       <tintalgo>nearest</tintalgo>
     </stream_tintalgo>
     <stream_taxmode>
-      <taxmode>extend</taxmode>
+      <taxmode>cycle</taxmode>
     </stream_taxmode>
     <stream_dtlimit>
       <dtlimit>1.e30</dtlimit>
