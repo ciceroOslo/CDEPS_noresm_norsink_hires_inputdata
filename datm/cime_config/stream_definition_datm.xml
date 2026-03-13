@@ -1129,7 +1129,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_era5landnonullmask_TEMP_cdf5.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="1951" last_year="2023">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
+      <file first_year="1951" last_year="2025">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.Solr.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>FSDS     Faxa_swdn</var>
@@ -1160,7 +1160,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_era5landnonullmask_TEMP_cdf5.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="1951" last_year="2023">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
+      <file first_year="1951" last_year="2025">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.Prec.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>PRECTmms Faxa_precn</var>
@@ -1191,7 +1191,7 @@
       <meshfile>$DIN_LOC_ROOT/cicero_mods/share/meshes/ESMFmesh_NorwayRect_0.1x0.1_era5landnonullmask_TEMP_cdf5.nc</meshfile>
     </stream_meshfile>
     <stream_datafiles>
-      <file first_year="1951" last_year="2023">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
+      <file first_year="1951" last_year="2025">$DIN_LOC_ROOT/cicero_mods/atm/datm7/atm_forcing.datm7.ERA5LAND_NORWAYRECT.0.1d.c20260223/clmforc.ERA5Land_NorwayRect0.1x0.1.TPQWL.%ym.nc</file>
     </stream_datafiles>
     <stream_datavars>
       <var>TBOT     Sa_tbot</var>
